@@ -1,4 +1,5 @@
 
+
 #ExperienciaComoCiclista{
 font-size: 16px;
 padding-top: 100px;
@@ -34,7 +35,6 @@ span{
   margin-top:15px;
 }
 #QuienesSomos{
-  margin-top: 5px;
   /*sticky-top include in class navbar default to move the navbar*/
 }
 #Entrenamientos{
