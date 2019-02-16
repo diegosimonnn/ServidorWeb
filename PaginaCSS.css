@@ -37,6 +37,22 @@ span{
 ul li{
   list-style: none;
 }
+.videos object,
+.videos embed,
+.videos video{
+  height: 100%;
+  left:0;
+  position: absolute;
+  top:0;
+  width: 100%;
+}
+.videos{
+height:0;
+overflow: hidden;
+padding-bottom: 56.25%;
+padding-top: 30px;
+position: relative;
+}
 #QuienesSomos{
   /*sticky-top include in class navbar default to move the navbar*/
 }
