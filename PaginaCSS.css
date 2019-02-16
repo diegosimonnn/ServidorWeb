@@ -34,6 +34,9 @@ span{
 .row{
   margin-top:15px;
 }
+ul li{
+  list-style: none;
+}
 #QuienesSomos{
   /*sticky-top include in class navbar default to move the navbar*/
 }
