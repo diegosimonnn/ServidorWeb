@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="PaginaCSS.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="scroll/js/eskju.jquery.scrollflow.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+    // Instantiate Scrolls
+    var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+
+    if (document.querySelector('[data-easing]')) {
+      var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
+
+      var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
+      var easeInCubic = new SmoothScroll('[data-easing="easeInCubic"]', {easing: 'easeInCubic'});
+      var easeInQuart = new SmoothScroll('[data-easing="easeInQuart"]', {easing: 'easeInQuart'});
+      var easeInQuint = new SmoothScroll('[data-easing="easeInQuint"]', {easing: 'easeInQuint'});
+
+      var easeInOutQuad = new SmoothScroll('[data-easing="easeInOutQuad"]', {easing: 'easeInOutQuad'});
+      var easeInOutCubic = new SmoothScroll('[data-easing="easeInOutCubic"]', {easing: 'easeInOutCubic'});
+      var easeInOutQuart = new SmoothScroll('[data-easing="easeInOutQuart"]', {easing: 'easeInOutQuart'});
+      var easeInOutQuint = new SmoothScroll('[data-easing="easeInOutQuint"]', {easing: 'easeInOutQuint'});
+
+      var easeOutQuad = new SmoothScroll('[data-easing="easeOutQuad"]', {easing: 'easeOutQuad'});
+      var easeOutCubic = new SmoothScroll('[data-easing="easeOutCubic"]', {easing: 'easeOutCubic'});
+      var easeOutQuart = new SmoothScroll('[data-easing="easeOutQuart"]', {easing: 'easeOutQuart'});
+      var easeOutQuint = new SmoothScroll('[data-easing="easeOutQuint"]', {easing: 'easeOutQuint'});
+    }
+    </script>
     <!-- stop -->
     <title>BTI Ciclismo</title>
 
@@ -27,6 +51,7 @@
   </head>
   <body>
 
+
       <nav class="navbar navbar-expand-sm navbar-light my-nav navbar-default">
         <div class="container">
           <a class="navbar-brand"><img src="fotos/14.png" width="50px"></a>
@@ -40,13 +65,13 @@
                 <a class="nav-link" href="#QuienesSomos" style="color:white;">Quienes Somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Entrenamientos" style="color:white;">Entrenamientos</a>
+                <a class="nav-link" data-scroll href="#Entrenamientos" style="color:white;">Entrenamientos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Sponsors" style="color:white;">Sponsors</a>
+                <a class="nav-link" data-scroll href="#Sponsors" style="color:white;">Sponsors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Contacto" style="color:white;">Contacto</a>
+                <a class="nav-link" data-scroll href="#Contacto" style="color:white;">Contacto</a>
               </li>
             </ul>
           </div>
@@ -259,6 +284,7 @@
                 </div>
               </div>
             </div>
+
       </section>
 
       <section id="Entrenamientos">
@@ -443,6 +469,8 @@
                 </div>
 
       </section>
+
+
       <footer style="background:#ff8f00;">
         <div class="d-flex justify-content-center">
           <img src="fotos/14.png" align="left" style="">
@@ -452,6 +480,7 @@
           </p>
         </div>
       </footer>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
