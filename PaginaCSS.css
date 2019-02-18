@@ -1,22 +1,14 @@
 #ExperienciaComoCiclista{
-font-size: 16px;
-padding-top: 100px;
-margin-bottom: 250px;
+font-size: 13px;
 }
 #ExperienciaComoEntrenador{
-  font-size: 16px;
-  padding-top:110px;
-  margin-bottom: 250px;
+  font-size: 13px;
 }
 #CursosRealizados{
-  font-size: 16px;
-  padding-top:110px;
-  margin-bottom: 250px;
+  font-size: 13px;
 }
 #IntegranteDelSeleccionado{
-  font-size: 16px;
-  padding-top:110px;
-  margin-bottom: 250px;
+  font-size: 13px;
 }
 .slider{
   /*background: url("fotos/6.jpg");*/
@@ -126,7 +118,7 @@ position: relative;
     -webkit-transform:scale(1.2);
 }
 .social{
-  -webkit-transition: -webkit-transform 0.5s ease 0.3s;
+  -webkit-transition: -webkit-transform 0.3s ease 0.3s;
 }
 .social:hover{
     -webkit-transform:scale(1.7);
