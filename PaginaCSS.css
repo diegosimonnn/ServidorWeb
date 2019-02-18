@@ -125,3 +125,10 @@ position: relative;
 .galeria img:hover{
     -webkit-transform:scale(1.2);
 }
+.social{
+  -webkit-transition: -webkit-transform 0.5s ease 0.3s;
+}
+.social:hover{
+    -webkit-transform:scale(1.7);
+  /*box-shadow: grey 5px 5px 10px;*/
+}
