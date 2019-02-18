@@ -7,6 +7,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="PaginaCSS.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rosario" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tauri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kadwa" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="scroll/js/eskju.jquery.scrollflow.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
@@ -44,7 +53,36 @@
           background-color: #0d47a1;
         }
         .navbar-default2{
-          background-color: #f44336;
+          background-color: #d84315;
+        }
+        .navbar-default3{
+          background-color: #ff8f00;
+        }
+        .bordesBlancos{
+          border: 1px white;
+          border-radius: 10%;
+        }
+        #titulo{
+          padding:30px 0 10px 0;
+          margin-top:40px;
+          font-family: 'Roboto Slab', serif;
+        }
+        #subtitulos{
+          font-family: 'Noto Serif', serif;
+        }
+        #textoestilo{
+          font-family: 'Rosario', sans-serif;
+        }
+        #slideFont{
+          font-family: 'Roboto Slab', sans-serif;
+        }
+        h5{
+          font-family: 'Metrophobic', serif;
+          font-weight: bold;
+        }
+        h3{
+          font-family: 'Kadwa', serif;
+          font-weight: bold;
         }
     </style>
 
@@ -52,7 +90,7 @@
   <body>
 
 
-      <nav class="navbar navbar-expand-sm navbar-light my-nav navbar-default">
+      <nav class="navbar navbar-expand-sm navbar-light my-nav navbar-default3">
         <div class="container">
           <a class="navbar-brand"><img src="fotos/14.png" width="50px"></a>
           <span class="navbar-text" style="color: white;">BTI Ciclismo</span>
@@ -80,33 +118,33 @@
 
       <section>
             <div class="bd-example">
-              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                   <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class="carousel-item active data-interval="200" ">
                     <img src="fotos/6.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>BTI Ciclismo</h5>
-                      <p>Osvaldo Benvenutti corriendo en el Gran Fondo de los 7 Lagos</p>
-                      <p>Recorrido de 110 kilometros que abarca desde San Martin de los Andes hasta Villa la Angostura</p>
+                      <h1 id="slideFont">BTI Ciclismo</h1>
+                      <p style="font-size:20px;" id="textoestilo">Osvaldo Benvenutti corriendo en el Gran Fondo de los 7 Lagos</p>
+                      <p style="font-size:20px;" id="textoestilo">Recorrido de 110 kilometros que abarca desde San Martin de los Andes hasta Villa la Angostura</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item data-interval="200" ">
                     <img src="fotos/8.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>BTI Ciclismo</h5>
-                      <p>Entrenamiento de un martes a la tarde con la presencia de Eduardo Sepulveda, ex alumno de Osvaldo Benvenuti</p>
+                      <h1 id="slideFont">BTI Ciclismo</h1>
+                      <p style="font-size:20px;" id="textoestilo">Entrenamiento de un martes a la tarde con la presencia de Eduardo Sepulveda, ex alumno de Osvaldo Benvenuti</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item data-interval="200" ">
                     <img src="fotos/12.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>BTI Ciclismo</h5>
-                      <p>Entrenamiento de Sabado por la mañana con el peloton de las chicas en el KDT de palermo</p>
+                      <h1 id="slideFont">BTI Ciclismo</h1>
+                      <p style="font-size:20px;" id="textoestilo">Entrenamiento de Sabado por la mañana con el peloton de las chicas en el KDT de palermo</p>
                     </div>
                   </div>
                 </div>
@@ -124,28 +162,26 @@
 
       <section id="QuienesSomos">
 
-        <div class="card text-center">
-          <div class="card-header navbar-default">
-            <h1 class="text-white"style="padding:10px 0 10px 0;">Quienes Somos</h1>
-          </div>
+        <div class="card text-center navbar-default">
+            <h1 class="scrollflow -pop -opacity text-white" id="titulo">Quienes Somos</h1>
           <article class="scrollflow -pop -opacity">
           <div class="card-body">
 
             <h3 class="card-title" style="color: orange; margin-bottom:30px;">BTI Ciclismo</h3>
-            <div class="container" style=" max-width:90%;">
-              <p class="card-text text-center" style="margin-bottom:30px;">
+            <div class="container" style=" max-width:95%;">
+              <p class="card-text text-center text-white scrollflow -slide-right -opacity" id="textoestilo" style="margin-bottom:30px;">
 
                 BTI es una de las mejores escuelas de ciclismo del pais, no solo por la basta experiencia de su entrenador Osvaldo Benvenuti, sino por su calidad humana.
-                Formar parte de un grupo siempre es motivador para el que comienza sus primeros pasos en el uso de la bici orientado a un fin un poco mas deportivo, la famosa " sana competencia" indefectiblemente mejora a la persona y lo invita mejorar cada día más en el objetivo que se haya planteado.
-                Pero mas allá de estas replicas de relojes cuestiones que tienen que ver con lo deportivo y con la experiencia de Osvaldo,todos los alumnos coincidimos en que formar parte de un grupo tan cálido es en realidad el fin que Osvaldo nos inculca.
+
+                Pero mas allá de estas replicas de relojes cuestiones que tienen que ver con lo deportivo y con la experiencia de Osvaldo, todos los alumnos coincidimos en que formar parte de un grupo tan cálido es en realidad el fin que Osvaldo nos inculca.
                 A continuación detallamos algunos de los logros de Osvaldo "Tito" Benvenuti en su carrera deportiva como ciclista y como entrenador:
 
               </p>
               </div>
-            <a href="#ventana1" class="btn btn-outline-primary btn-lg" data-toggle="modal" style="margin-bottom:10px;">Osvaldo Benvenutti</a>
+            <a href="#ventana1" class="btn btn-light btn-lg" data-toggle="modal" style="margin-bottom:10px;">Osvaldo Benvenutti</a>
 
           </div>
-          <div class="card-footer text-muted"> <div class="container"><em>
+          <div class="card-footer text-white"> <div class="container"><em>
             "La idea es perfeccionamiento de la técnica arriba de la bici, trabajar con gente amateur que busca mejorar
             y aprender a andar en bicicleta, esa es la idea de la escuela, vivir el ciclismo como yo lo viví, que para mí no es un trabajo, es una pasión."
           </em><br>— &nbsp Osvaldo Benvenuti
@@ -252,9 +288,9 @@
           </div>
 
 
-            <div class="row" style="margin-bottom:10px;  margin-right:5px; margin-left:5px;">
+            <div class="row" style="margin-bottom:10px;  margin-right:5px; margin-left:5px; margin-top:40px; margin-bottom:40px;">
               <div class="col-sm-6 scrollflow -slide-bottom -opacity">
-                <div class="card" style="max-height:400px;">
+                <div class="card navbar-default text-white border-light" style="max-height:400px;">
                   <div class="card-body">
 
                   <div class="col-md-4"style="float:left;">
@@ -262,14 +298,14 @@
                   </div>
                   <div class="col-md-12">
                     <h5 class="card-title">Ruta</h5>
-                    <p class="card-text d-flex align-content-start flex-wrap">Entrenamiento controlado y programado a la ruta del peloton femenino en la localidad de Cañuelas </p>
+                    <p class="card-text d-flex align-content-start flex-wrap" id="textoestilo">Entrenamiento controlado y programado a la ruta del peloton femenino en la localidad de Cañuelas </p>
                   </div>
 
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 scrollflow -slide-top -opacity">
-                <div class="card"style="max-height:400px;">
+                <div class="card navbar-default text-white border-light"style="max-height:400px;">
                   <div class="card-body">
 
                   <div class="col-md-4" style="float:left;">
@@ -277,7 +313,7 @@
                   </div>
                   <div class="col-md-12">
                     <h5 class="card-title">Internacional</h5>
-                    <p class="card-text d-flex align-content-start flex-wrap">Pablo y Daniel en una prueba de etapas internacional, recorriendo Austria, Suiza e Italia </p>
+                    <p class="card-text d-flex align-content-start flex-wrap" id="textoestilo">Pablo y Daniel en una prueba de etapas internacional, recorriendo Austria, Suiza e Italia </p>
                   </div>
 
                   </div>
@@ -289,26 +325,19 @@
 
       <section id="Entrenamientos">
           <div class="card text-center">
-              <div class="card-header navbar-default">
-                <h1 class="text-white"style="padding:10px 0 10px 0;">Entrenamientos</h1>
-              </div>
+                <h1 id="titulo">Entrenamientos</h1>
+
 
               <div class="card-body">
-
-                <div class="container d-flex justify-content-center videos">
-                  <video width="400" height="180" controls muted autoplay loop>
-                    <source src="fotos/btivideo.mp4" type="video/mp4">
-                  </video>
-                </div>
 
                   <div class="row">
                   <div class="col-sm-6">
                     <div class="card text-center">
-                      <div class="card-header" style="background:#ff8f00; color:white;">
-                        <h2>Circuito KDT</h2>
+                      <div class="card-header" style="background:white;">
+                        <h3 id="subtitulos">Circuito KDT</h3>
                       </div>
                       <div class="card-body">
-                        <p class="card-text">
+                        <p class="card-text" id="textoestilo">
                           En el Circuito KDT se realizan los entrenamienos individuales y grupales los dias martes y jueves desde
                           las 08:15hs hasta las 16:00hs, los sabados a partir de las 08:45hs se realizan "fondos" en el grupo acorde al nivel
                           de cada uno.
@@ -322,11 +351,11 @@
 
                   <div class="col-sm-6">
                     <div class="card text-center">
-                      <div class="card-header" style="background:#ff8f00; color:white;">
-                        <h2>CeNaDe</h2>
+                      <div class="card-header" style="background:white;">
+                        <h3 id="subtitulos">CeNaDe</h3>
                       </div>
                       <div class="card-body">
-                        <p class="card-text">
+                        <p class="card-text" id="textoestilo">
                         Durante el todo mes de enero el Circuito KDT permanece cerrado, es por eso que se ofrece la posibilidad de entrenar en el CeNaDe
                         con los mismos horarios que en el KDT, excepto los sabados, que el Circuito KDT permanece abierto.
                         <div class="mapa2 scrollflow -pop -opacity">
@@ -344,9 +373,9 @@
       <section id="Sponsors">
 
         <div class="card text-center">
-          <div class="card-header navbar-default">
-            <h1 class="text-white"style="padding:10px 0 10px 0;">Sponsors</h1>
-          </div>
+
+            <h1 id="titulo">Sponsors</h1>
+
           <div class="card-body scrollflow -pop -opacity">
             <h3 class="card-title" style="color: #0d47a1; margin-top:10px; margin-bottom:30px;">BTI Ciclismo tiene el agrado de contar son los siguientes sponsors:</h3>
 
@@ -356,7 +385,7 @@
                   <img src="fotos/20.jpg" class="card-img-top" alt="..." id="logos"style="border: 4px #0d47a1 solid;">
                   <div class="card-body">
                     <h5 class="card-title">Roark</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="textoestilo">
                     Cuni Roark
                     Roark es una linea de productos de la marca Cuni destinados al consumidor Ciclista
                     , proveyendole asi a BTI caramañolas.
@@ -371,7 +400,7 @@
                   <img src="fotos/18.jpg" class="card-img-top" alt="..." id="logos">
                   <div class="card-body">
                     <h5 class="card-title">ProBikes</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="textoestilo">
                     Bicicleteria ProBikes junto a Ramiro Aguilar(dueño y fundador), aconsejan y ayudan a los alumnos de la escuela
                     BTI ciclismo en los entrenamientos por la tarde con sus conocimientos y experiencias.
                     </p>
@@ -385,7 +414,7 @@
                   <img src="fotos/19.jpg" class="card-img-top" alt="..." id="logos">
                   <div class="card-body">
                     <h5 class="card-title">Veronica Lovaglio Estudio</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="textoestilo">
                     Coaching & Diseño Corporativo
                     Profesionales del diseño y la comunicación, especialistas en la concepción de
                     estrategias de marketing y desarrollos web para empresas.
@@ -405,7 +434,7 @@
                   <img src="fotos/21.jpg" class="card-img-top" alt="..." style="border: 4px #0d47a1 solid;">
                   <div class="card-body">
                     <h5 class="card-title">Shimano</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="textoestilo">
                       Shimano es una empresa multinacional japonesa
                       conocida por fabricar componentes para bicicletas
                       además de componentes para pesca y deportes como piragüismo, canoa, remo, deportes de invierno y golf.
@@ -420,7 +449,7 @@
                   <img src="fotos/22.png" class="card-img-top" alt="..." style="border: 4px #0d47a1 solid;">
                   <div class="card-body">
                     <h5 class="card-title">ENA Sports</h5>
-                    <p class="card-text">
+                    <p class="card-text" id="textoestilo">
                       Es marca de suplementos deportivos
                       líder en Argentina con más de 100 formulaciones de productos y distribución en gran parte de Latinoamérica.
                     </p>
@@ -442,27 +471,26 @@
 
       <section id="Contacto">
 
-        <div class="card">
-          <div class="card-header navbar-default text-center">
-            <h1 class="text-white"style="padding:10px 0 10px 0;">Contacto</h1>
-          </div>
+        <div class="card text-center">
+
+            <h1 id="titulo">Contacto</h1>
 
 
 
 
-              <div class="card text-center scrollflow -pop -opacity" style="max-height:350px; padding-top:20px; padding-bottom:10px;">
-                <ul>
-                  <li><img src="fotos/whatsapp.png" style="width:40px;" alt=""><strong> 116031-7157</strong></li> <br>
-                  <li> <a href="https://www.instagram.com/ciclismobti/?hl=es-la" target="_blank">
-                  <button type="button" class="btn btn-outline-warning"><img src="fotos/instagram2.png" alt="" style="width: 40px"> CiclismoBTI</button></a>
-                  </li> <br>
-                  <li> <a href="https://www.facebook.com/BTI-CICLISMO-171832002880306" target="_blank">
-                  <button type="button" class="btn btn-outline-primary"><img src="fotos/facebook2.png" alt=""style="width:30px"> BTI Ciclismo</button></a>
-                  </li> <br>
-                  <li><a href="https://www.youtube.com/channel/UCaBZInY6dSHWYouKESNLHrg" target="_blank">
-                  <button type="button" class="btn btn-outline-danger">
-                    <img src="fotos/youtube2.jpg" alt=""style="width:40px; border-radius:15%; ">Osvaldo Benvenuti</button></a>
-                  </li>
+              <div class="text-center scrollflow -pop -opacity" style="max-height:350px; padding-top:20px; padding-bottom:10px;">
+                <ul id="textoestilo">
+                  <li><img src="fotos/whatsapp.png" style="width:35px;" alt=""> 116031-7157</li> <br>
+                  <li> <img src="fotos/gmail.png" style="width:40px;" alt="">ciclismobti@gmail.com</li><br>
+
+                   <a href="https://www.instagram.com/ciclismobti/?hl=es-la" target="_blank">
+                  <img src="fotos/instagram2.png" alt="" style="width: 33px"></a>
+                  &nbsp&nbsp
+                  <a href="https://www.facebook.com/BTI-CICLISMO-171832002880306" target="_blank">
+                  <img src="fotos/facebook2.png" alt=""style="width:30px"></a>
+                  &nbsp&nbsp
+                  <a href="https://www.youtube.com/channel/UCaBZInY6dSHWYouKESNLHrg" target="_blank">
+                    <img src="fotos/youtube2.jpg" alt=""style="width:47px; border-radius:15%; "></a>
 
                 </ul>
 
